@@ -5,32 +5,28 @@
 }
 
 body{
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgb(190, 192, 194);
     width: 100%;
     height: 100%;
-    background-color: rgba(248, 221, 188, 0.654);
-
 }
 
 .container{
-    position: relative;
-    display: flex;
+    box-sizing: border-box;
+    position: absolute;
     background-color: rgb(190, 192, 194);
-    width: 90%;
-    height: 52.5rem;
-    margin: 5rem;
-}
-.over{
-    width: 10rem;
-    height: 23rem;
-    z-index: 1;
-    color: rgb(190, 192, 194);
-    background-color: rgb(190, 192, 194);
-    margin-top: 3rem;
-}
-.contain{
-    position: relative;
     width: 30%;
-    height: 95%;
+    height: 100%;
+    margin-left: 0.5rem;
+}
+
+.contain{
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 55.5rem;
     background-color: rgb(224, 222, 222);
     margin-top: 1rem;
     margin-left: 1rem;
@@ -39,18 +35,19 @@ body{
 .head{
     position: relative;
     display: flex;
-    align-content: center;
+    overflow: hidden;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
     background-color: #08b981;
     width: 100%;
-    height: 14rem;
+    height: 17rem;
     padding: 0.7rem;
     border-radius: 0 0 0 2.5rem;
 }
 
 .header{
+    box-sizing: border-box;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -64,6 +61,7 @@ body{
 }
 
 .loca{
+    box-sizing: border-box;
     position: relative;
     font-size: 1.5rem;
     margin-left: 0.5rem;
@@ -72,21 +70,21 @@ body{
 }
 .sharp{
     width: 1.8rem;
-    height: 1.8rem;
+    height: 1.9rem;
     margin-bottom: -0.5rem;
     box-sizing: border-box;
 
 }
 .sharp2{
     width: 1.8rem;
-    height: 1.8rem;
+    height: 1.9rem;
     box-sizing: border-box;
 }
 .sharp3{
     width: 2rem;
     height: 2rem;
     padding-left: 0.5rem;
-    margin-bottom: -0.8rem;
+    margin-top: 0.8rem;
     box-sizing: border-box;
 }
 .red{
@@ -114,11 +112,13 @@ body{
     box-sizing: border-box;
 }
 .for{
-    background-color: rgb(59, 71, 65);
+    color:#000;
+    background-color: rgb(255, 255, 255);
 }
 
 .loc{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
     margin-bottom: 0.7rem;
@@ -132,21 +132,27 @@ body{
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
     width: 100%;
-    height: 4rem;
+    height: 3.8rem;
+    gap: 1.5rem;
 }
 .sear{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     margin-bottom: 1rem;
-    width: 24rem;
+    width: 90%;
     height: 3.3rem;
     border-radius: 1rem;
     z-index: 1;
 }
 input{
+    box-sizing: border-box;
+    border-radius: 1rem;
     height: 3.2rem;
-    width: 15rem;
+    width: 100%;
     border: none;
     padding-left: 0.5rem;
 
@@ -158,92 +164,107 @@ input::placeholder{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
-    width: 3rem;
-    height: 3rem;
+    gap: 0.85rem;
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: rgb(255, 105, 41);
     border-radius: 1rem;
-    margin: 0.5rem;
-    margin-bottom: 1.4rem;
 }
+
 .ora{
+    box-sizing: border-box;
     background-color:   rgb(255, 105, 44);
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.7rem;
+    height: 0.7rem;
     border: solid white;
     border-radius: 50%;
     color: rgb(255, 255, 255);
-    margin-left: 0.6rem;
+    margin-left: 0.8rem;
     opacity: 0.9;
     margin-right: 2.5rem;
 }
 .orab{
+    box-sizing: border-box;
     background-color: rgb(255, 105, 44);
-    width: 0.5em;
-    height: 0.5rem;
+    width: 0.7em;
+    height: 0.7rem;
     margin-top: -0.5rem;
     border: solid white;
     border-radius: 50%;
     color: rgb(255, 255, 255);
-    margin-left: 1rem;
+    margin-left: 1.2rem;
     opacity: 0.9;
 }
 .ora2{
+    box-sizing: border-box;
     background-color: rgb(255, 105, 41);
     width: 0.8em;
     height: 0.5rem;
     border-top: solid white;
     margin-left: 0.9rem;
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
     opacity: 0.9;
 }
 .ora2b{
+    box-sizing: border-box;
     background-color: rgb(255, 105, 41);
     width: 0.8em;
     height: 0.5rem;
     border-top: solid white;
-    margin-left: 0.7rem;
+    margin-left: 0.9rem;
     opacity: 0.9;
     margin-top: -0.2rem
 }
 .bord{
     box-sizing: border-box;
-    border: solid 3rem rgba(231, 234, 236, 0.133);
+    border: solid 2.5rem rgba(255, 255, 255, 0.178);
     border-radius: 50%;
-    width: 18rem;
-    height: 18rem;
+    width: 14rem;
+    height: 14rem;
     color: #08b981;
-    margin-top: -5rem;
-    margin-left: 16rem;
+    margin-top: 7rem;
+    margin-left: 15rem;
     position: absolute;
+    z-index: 1;
 }
 
 .parl{
     box-sizing: border-box;
     position: relative;
     display: flex;
-    margin: 0.4rem;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 92.5%;
-    height: 5.2rem;
-    padding: 0.5rem;
-    gap: 1rem;
+    width: 100%;
+    height: 6rem;
+    padding: 1rem;
 }
 .part{
-    width: 3rem;
-    height: 2.5rem;
+    box-sizing: border-box;
+    width: 4rem;
+    height: 4rem;
     background-color: rgb(245, 238, 235);
     border-radius: 1rem;
     padding-top: 1.2rem;
     padding-left: 1rem;     
 }
+.part:hover{
+    background-color: #efcc97;
+    cursor: pointer;
+}
 .woo{
+    box-sizing: border-box;
+    font-weight: 600;
     margin-top: 0.4rem;
     margin-left: 1rem;
-    color: #000;
+    color: #273229;
+}
+.woo:hover{
+    color: #00a703;
+    cursor: pointer;
 }
 
 .see-me{
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     margin-top: 1.5rem;
@@ -251,47 +272,56 @@ input::placeholder{
     margin-right: 1rem;
 }
 .me{
+    box-sizing: border-box;
     font-weight: 600;
     font-size: 1rem;
 }
 .see{
+    box-sizing: border-box;
     font-size: 1rem;
     color:#fe6100;
 }
 
 .lak{
-    width: 10.5rem;
-    height: 8rem;
+    position: relative;
+    width: 90%;
+    height: 50%;
     border-radius: 1rem;
     margin: 0.5rem;
     box-sizing: border-box;
+    box-shadow: 0 5px 7px rgba(243, 142, 0, 0.623), 0 5px 6px rgba(4, 149, 246, 0.821);;
 }
+
 .com{
-    width: 95%;
+    position: relative;
+    width: 93%;
     height: 15rem;
     display: flex;
     gap: 1rem;
-    margin: 0.5rem;
+    margin: 0.8rem;
     box-sizing: border-box;
 }
+
 .lake{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     font-size: 0.8rem;
-    width: 14rem;
+    width: 48%;
     height: 13rem;
     border-radius: 1rem;
     background: radial-gradient(closest-side, #fca2a246 5%,#f3eeee 50%, #fbfbfb 100%);
+    box-shadow: 0 5px 7px rgba(0,0,0,0.12), 0 5px 6px rgba(0,0,0,0.24);
 }
 .luck{
     display: flex;
     flex-direction: column;
     font-size: 0.8rem;
-    width: 14rem;
+    width: 48%;
     height: 13rem;
     border-radius: 1rem;
     background: radial-gradient(closest-side, #a2dcfc70 5%,#f3eeee 50%, #fbfbfb 100%);
+    box-shadow: 0 5px 7px rgba(0,0,0,0.12), 0 5px 6px rgba(0,0,0,0.24);
 }
 .vi{
     display: flex;
@@ -310,15 +340,14 @@ input::placeholder{
 }
 
 .sharp4{
+    box-sizing: border-box;
     width: 0.9rem;
     height: 0.8rem;
     margin-top: 0.1rem;
-
-    /* padding-left: 0.5rem;
-    margin-bottom: -0.8rem; */
 }
 
 .harp{
+    box-sizing: border-box;
     display: flex;
     gap: 0.3rem;
     font-weight: 600;
@@ -326,6 +355,7 @@ input::placeholder{
     margin: 0.3rem;
 }
 .per{
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     margin: 0.6rem;
@@ -348,27 +378,33 @@ input::placeholder{
     flex-direction: row;
 }
 .luc{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     font-size: 0.8rem;
-    width: 23.5rem;
+    width: 93%;
     height: 8rem;
     border-radius: 1rem;
     background: radial-gradient(closest-side, #f3eeee 50%, #fbfbfb 100%);
+    box-shadow: 0 5px 7px rgba(0,0,0,0.12), 0 5px 6px rgba(0,0,0,0.24);
     margin: 1rem;
 }
 
 .lek{
-    width: 10rem;
+    box-sizing: border-box;
+    width: 9rem;
     height: 7rem;
     margin: 0.5rem;
     border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
 }
 .ppie{
     margin-top: 1rem;
+    position: relative;
 }
 .pie{
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     width: 11rem;
@@ -383,6 +419,7 @@ input::placeholder{
 }
 
 .slast{
+    box-sizing: border-box;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -390,18 +427,19 @@ input::placeholder{
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: #ffffff;
-    width: 21.6rem;
-    height: 5rem;
+    width: 100%;
+    height: 6rem;
     margin-top: -3rem;
 }
 .slast1{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    width: 6rem;
+    width: 7rem;
     height: 2rem;
     align-items: center;
-    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
     border-radius: 1rem;
     padding-left: 0.9rem;
     background-color: #31f7b8ad;
@@ -411,21 +449,40 @@ input::placeholder{
 }
 
 .slast2{
+    box-sizing: border-box;
     width: 14rem;
     height: 2rem;
     display: flex;
     justify-content: space-around;
-    padding-top: 0.9rem;
 }
 
 .black-line{
+    box-sizing: border-box;
     position: relative;
     width: 9.5rem;
     height: 0.4rem;
     border-radius: 0.5rem;
     color: rgb(190, 192, 194);
-    margin-top: -0.65rem;
+    margin-top: -2rem;
     margin-left: 8rem;
     background-color: #000;
     z-index: 1;
+}
+.at{
+    z-index: 1;
+    font-size: 2rem;
+    color: #9d9d9e6b;
+    position:absolute;
+    transform: rotate(-40deg);
+    margin-top: -4.3rem;
+    margin-left: -1rem;
+}
+.at2{
+    z-index: 1;
+    font-size: 2rem;
+    color: #78787a6b;
+    position:absolute;
+    transform: rotate(-40deg);
+    margin-top: -6.3rem;
+    margin-left: 7rem;
 }
