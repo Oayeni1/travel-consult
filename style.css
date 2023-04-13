@@ -26,7 +26,7 @@ body{
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 55.5rem;
+    height: 52.2rem;
     background-color: rgb(224, 222, 222);
     margin-top: 1rem;
     margin-left: 1rem;
@@ -41,7 +41,7 @@ body{
     box-sizing: border-box;
     background-color: #08b981;
     width: 100%;
-    height: 17rem;
+    height: 14rem;
     padding: 0.7rem;
     border-radius: 0 0 0 2.5rem;
 }
@@ -369,7 +369,6 @@ input::placeholder{
 .for-me{
     display: flex;
     justify-content: space-between;
-    margin-top: 0.1rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
